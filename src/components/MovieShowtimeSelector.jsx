@@ -7,7 +7,9 @@ export function MovieShowtimeSelector({
   showtimes 
 }) {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12 bg-gray-800/50 p-6 rounded-xl border border-gray-700">
+    // [BUG - TYPO] 'gap-' is an incomplete/invalid Tailwind class, breaking spacing.
+    // [FIX] gap-6
+    <div className="grid grid-cols-1 md:grid-cols-2 gap- mb-12 bg-gray-800/50 p-6 rounded-xl border border-gray-700">
       <div>
         <label className="block text-sm font-semibold text-gray-300 mb-2">Select Movie</label>
         <select 

@@ -90,7 +90,9 @@ function App() {
           showtimes={showtimes}
         />
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        // [BUG - LAYOUT] 'flex-row-reverse' swaps sidebar and main content position.
+        // [FIX] Remove flex-row-reverse or use flex-row
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 flex flex-row-reverse">
           
           {/* MAIN SEATING AREA */}
           <div className="lg:col-span-2">
