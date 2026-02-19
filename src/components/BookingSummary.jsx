@@ -9,16 +9,12 @@ export function BookingSummary({
   maxSeats = 10
 }) {
   return (
-    // [BUG - TYPO] 'rounded-xx' is invalid; should be 'rounded-xl'.
-    // [FIX] rounded-xl
     <div className="bg-gradient-to-b from-gray-800 to-gray-900 border border-gray-700 rounded-xx p-6 sticky top-8 shadow-2xl">
       
       <h3 className="text-lg font-bold mb-4 flex items-center gap-2">
         <span className="text-indigo-400">📽️</span> Booking Summary
       </h3>
 
-      // [BUG - SPACING] 'm-10' creates huge external margins causing layout shift.
-      // [FIX] Remove m-10 or use m-2
       <div className="space-y-4 mb-6 border-b border-gray-700 pb-4 m-10">
         <div>
           <p className="text-gray-400 text-sm">Movie</p>
@@ -36,8 +32,6 @@ export function BookingSummary({
             <p className="text-gray-400 text-sm font-semibold mb-3">Selected Seats ({selected.length}/{maxSeats})</p>
             <div className="space-y-2 max-h-40 overflow-y-auto">
               {selectedSeatsInfo.map(seat => (
-                // [BUG - COLOR] 'text-gray-900' makes text invisible on dark background.
-                // [FIX] text-white or text-gray-100
                 <div key={seat.id} className="flex justify-between items-center bg-gray-700/50 p-2 rounded border border-gray-600/50">
                   <span className="text-sm text-gray-900">Seat {seat.id} <span className="text-xs text-gray-400 capitalize">({seat.category})</span></span>
                   <span className="text-green-400 font-semibold">${seat.price}</span>

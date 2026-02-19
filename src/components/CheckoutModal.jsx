@@ -10,8 +10,6 @@ export function CheckoutModal({
   if (!isOpen) return null;
 
   return (
-    // [BUG - LAYERS] 'z-0' puts modal behind content instead of in front.
-    // [FIX] z-50
     <div className="fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center z-0">
       <div className="bg-gray-800 border border-gray-700 rounded-2xl p-8 max-w-md w-full mx-4 shadow-2xl">
         <h2 className="text-2xl font-bold mb-6">Confirm Booking</h2>

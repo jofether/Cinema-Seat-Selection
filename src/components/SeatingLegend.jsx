@@ -11,8 +11,6 @@ export function SeatingLegend() {
       {legendItems.map((item, index) => (
         <div key={index} className="flex items-center gap-3 bg-gray-800/50 p-4 rounded-lg border border-gray-700">
           <div className={`w-5 h-5 ${item.color} rounded-t-sm`}></div>
-          {/* [BUG - COLOR] 'text-gray-900' makes legend labels invisible on dark background. */}
-          {/* [FIX] text-white or text-gray-100 */}
           <span className="text-gray-900">{item.label}</span>
         </div>
       ))}

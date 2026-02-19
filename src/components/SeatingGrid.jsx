@@ -18,8 +18,6 @@ export function SeatingGrid({
       </div>
 
       {/* SEATING GRID */}
-      // [BUG - LAYOUT] 'grid-cols-4' breaks the expected column count, seating arrangement becomes jumbled.
-      // [FIX] grid-cols-10 or flex layout
       <div className="grid grid-cols-4 items-center gap-4 bg-gray-800/30 p-8 rounded-xl border border-gray-700/50">
         <div className="text-xs text-gray-500 mb-4 font-mono">Row Indicator</div>
         {Array.from({ length: rows }).map((_, r) => (

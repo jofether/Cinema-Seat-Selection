@@ -1,6 +1,4 @@
 export function Seat({ status, id, category, onToggle }) {
-  // [BUG - SPACING] '-m-2' creates negative margin causing overlap with adjacent seats.
-  // [FIX] Remove '-m-2' or use 'm-0'
   const baseClass = "-m-2 w-8 h-8 rounded-t-lg text-xs flex items-center justify-center font-bold transition-all transform hover:scale-125 shadow-sm cursor-pointer duration-200";
   
   const colors = {
@@ -24,8 +22,6 @@ export function Seat({ status, id, category, onToggle }) {
   };
 
   return (
-    // [BUG - LAYERS] 'relative -top-4' causes seats to overlap rows above them.
-    // [FIX] Remove 'relative -top-4' or use 'relative top-0'
     <div 
       onClick={() => status !== 'taken' && onToggle(id)}
       className={`relative -top-4 ${baseClass} ${getColorClass()}`}
