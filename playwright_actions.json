@@ -1,0 +1,5 @@
+{
+  "actions": [
+    { "name": "bug-5-Checkout", "selector": "button.from-indigo-600" }
+  ]
+}
