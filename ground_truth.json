@@ -9,7 +9,7 @@
       "line_number": 93,
       "clean_code": "<div className=\"grid grid-cols-1 lg:grid-cols-3 gap-8\">",
       "buggy_code": "<div className=\"grid grid-cols-1 lg:grid-cols-3 gap-8 flex flex-row-reverse\">",
-      "css_selector": ".grid",
+      "css_selector": ".grid.gap-8",
       "bounding_box": {
         "x": 64,
         "y": 302,
@@ -25,7 +25,7 @@
       "line_number": 12,
       "clean_code": "<div className=\"bg-gradient-to-b from-gray-800 to-gray-900 border border-gray-700 rounded-xl p-6 sticky top-8 shadow-2xl\">",
       "buggy_code": "<div className=\"bg-gradient-to-b from-gray-800 to-gray-900 border border-gray-700 rounded-xx p-6 sticky top-8 shadow-2xl\">",
-      "css_selector": ".rounded-xx",
+      "css_selector": ".sticky.top-8.p-6.shadow-2xl",
       "bounding_box": {
         "x": 853,
         "y": 302,
@@ -41,12 +41,12 @@
       "line_number": 16,
       "clean_code": "<div className=\"space-y-4 mb-6 border-b border-gray-700 pb-4\">",
       "buggy_code": "<div className=\"space-y-4 mb-6 border-b border-gray-700 pb-4 m-10\">",
-      "css_selector": ".m-10",
+      "css_selector": ".space-y-4.mb-6.border-b.pb-4",
       "bounding_box": {
-        "x": 918,
-        "y": 286,
-        "width": 233,
-        "height": 121
+        "x": 878,
+        "y": 246,
+        "width": 313,
+        "height": 201
       }
     },
     {
@@ -57,7 +57,7 @@
       "line_number": 36,
       "clean_code": "<span className=\"text-sm\">Seat {seat.id} <span className=\"text-xs text-gray-400 capitalize\">({seat.category})</span></span>",
       "buggy_code": "<span className=\"text-sm text-gray-900\">Seat {seat.id} <span className=\"text-xs text-gray-400 capitalize\">({seat.category})</span></span>",
-      "css_selector": ".text-gray-900",
+      "css_selector": ".space-y-2 span.text-sm",
       "bounding_box": {
         "x": 877,
         "y": 539,
@@ -73,12 +73,12 @@
       "line_number": 13,
       "clean_code": "<div className=\"fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center z-50\">",
       "buggy_code": "<div className=\"fixed inset-0 bg-black/80 backdrop-blur-sm flex items-center justify-center z-0\">",
-      "css_selector": ".z-0",
+      "css_selector": ".fixed.backdrop-blur-sm",
       "bounding_box": {
         "x": 0,
         "y": 0,
-        "width": 0,
-        "height": 0
+        "width": 1280,
+        "height": 720
       }
     },
     {
@@ -89,7 +89,7 @@
       "line_number": 10,
       "clean_code": "<div className=\"grid grid-cols-1 md:grid-cols-2 gap-6 mb-12 bg-gray-800/50 p-6 rounded-xl border border-gray-700\">",
       "buggy_code": "<div className=\"grid grid-cols-1 md:grid-cols-2 gap- mb-12 bg-gray-800/50 p-6 rounded-xl border border-gray-700\">",
-      "css_selector": ".gap-",
+      "css_selector": ".mb-12.p-6.rounded-xl.border",
       "bounding_box": {
         "x": 64,
         "y": 32,
@@ -105,7 +105,7 @@
       "line_number": 2,
       "clean_code": "const baseClass = \"w-8 h-8 rounded-t-lg text-xs flex items-center justify-center font-bold transition-all transform hover:scale-125 shadow-sm cursor-pointer duration-200\";",
       "buggy_code": "const baseClass = \"-m-2 w-8 h-8 rounded-t-lg text-xs flex items-center justify-center font-bold transition-all transform hover:scale-125 shadow-sm cursor-pointer duration-200\";",
-      "css_selector": ".-m-2",
+      "css_selector": "div[class*='flex gap-2'] .w-8.h-8.rounded-t-lg:first-of-type",
       "bounding_box": {
         "x": 64,
         "y": 410,
@@ -121,7 +121,7 @@
       "line_number": 27,
       "clean_code": "className={`${baseClass} ${getColorClass()}`}",
       "buggy_code": "className={`relative -top-4 ${baseClass} ${getColorClass()}`}",
-      "css_selector": ".relative",
+      "css_selector": ".w-8.h-8.rounded-t-lg",
       "bounding_box": {
         "x": 878,
         "y": 779,
@@ -137,7 +137,7 @@
       "line_number": 21,
       "clean_code": "<div className=\"flex flex-col items-center gap-4 bg-gray-800/30 p-8 rounded-xl border border-gray-700/50\">",
       "buggy_code": "<div className=\"grid grid-cols-4 items-center gap-4 bg-gray-800/30 p-8 rounded-xl border border-gray-700/50\">",
-      "css_selector": ".grid",
+      "css_selector": ".items-center.gap-4.p-8.rounded-xl",
       "bounding_box": {
         "x": 64,
         "y": 410,
@@ -153,7 +153,7 @@
       "line_number": 14,
       "clean_code": "<span className={item.color.includes('opacity') ? 'text-gray-400' : 'text-gray-300'}>{item.label}</span>",
       "buggy_code": "<span className=\"text-gray-900\">{item.label}</span>",
-      "css_selector": ".text-gray-900",
+      "css_selector": ".flex.items-center.gap-3 span",
       "bounding_box": {
         "x": 64,
         "y": 604,
